@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>My Project</title>
+</head>
+<body>
+
+    <header id="navbar">
+        <h1 class="logo"><a href="index.html">HOTSPOT</a></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="mens.html">Mens</a></li>
+                <li><a href="womens.html">Womens</a></li>
+                <li><a href="juniors.html">Junior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Landing">
+        <ul class="landing-mens">
+            <li><h2>STYLISH & TRENDY</h2></li>
+            <li><p>Get Ready For The Summer</p></li>
+            <li><a href=""><p>Shop Mens</p></a></li>
+        </ul>
+        <ul class="images">
+            <img class="michael" src="img/michael.jpg" alt="">
+            <img class="rihanna" src="img/Rihannas-Pregnancy-Announcement-Outfit-Is-Worth-More-Than-20K-003 2.jpg" alt="">
+        </ul>
+        <ul  class="landing-womens">
+            <li><h2>Keep Up With Inspired Fashion</h2></li>
+            <li><p>Feel Classy & Elegant</p></li>
+            <li><a href=""><p>Shop Womens</p></a></li>
+        </ul>
+    </section>
+    <section id="Sale">
+        <p class="sale-offer">*UP TO 40% OFF SELECTED ITEMS*</p>
+        <img src="img/606687.svg" alt="">
+        <p class="sale-view"><a href="">View all</a></p>
+    </section>
+    <section id="Latest-Arrivals">
+        <p class="arrival-title">LATEST DESIGNER ARRIVALS</p>
+        <img class="img1" src="img/IMG_4219.JPG" alt="">
+        <img class="img2" src="img/IMG_4221.jpg" alt="">
+        <img class="img3" src="img/IMG_4222.jpg" alt="">
+        <img class="img4" src="img/IMG_4223.jpg" alt="">
+        <img class="img5" src="img/IMG_4220.jpg" alt="">
+        <a href=""><p class="latest-men">Shop Mens</p></a>
+        <a href=""><p class="latest-women">Shop Womens</p></a>
+    </section>
+    <section id="Scheme">
+        <h2>OUR REWARD SCHEME</h2>
+        <div class="flex-container">
+            <div class="discover">
+                <img src="img/IMG_4241.jpg" alt="">
+                <p>Look good. Feel good. Move good with our Nike performance tracksuits
+                    Stylish and comfortable NOW more than ever before.
+                </p>
+                <p>Not to mention how fabulous they look on your two favourite comedians, STMM & Specs!</p>
+            </div>
+            <div class="action-calls">
+                <p>Enter your <a href="#">email address</a></p>
+                <p>Subscribe to the <a href="#">Hotspot</a> website</p>
+                <p>Everytime you make an online purchase, you'll be sent a <a href="#">code via your email</a> in which you can claim instantly to get a % off your next purhcase!</p>
+                <p>Click <a href="#">here</a> and review our reward scheme policy.</p>
+                <p>Limited time only for loyal customers.</p>
+            </div>
+            <div class="form">
+                <form action="#">
+                    <input type="email" id="email" pattern=".+@+." placeholder="Enter your email here*">
+                    <input type="submit" id="submit" value="Subscribe">
+                </form>
+                <p>We take great responsibility of your personal data, view our privacy policy *<a href="#">here</a>*</p>
+            </div>
+        </div>
+    </section>
+    <section id="Hotspot">
+        <h2>HOTSPOT</h2>
+    </section>
+    <section id="footer">
+        <div class="flex-container-1">
+            <div class="info">
+                <p>Dont Forget. We Provide Next Day Delivery. Straight To Your Front Door!</p>
+                <img src="#" alt="">
+            </div>
+            <div class="customer-care">
+                <p class="footer-title">Customer Care</p>
+                <ul>
+                    <a href="#"><li>Shipping Policy ></li></a>
+                    <a href="#"><li>Returns Policy ></li></a>
+                    <a href="#"><li>Contact Us ></li></a>
+                    <a href="#"><li>About Us ></li></a>
+                </ul>
+            </div>
+            <div class="stores">
+                <p class="footer-title">Visit Our Stores</p>
+                <p>HighCross Mall</p>
+                <p>Leicester</p>
+                <p>Fosse Park Unit</p>
+                <p>9. Leicester</p>
+            </div>
+            <div class="comment">
+                <p>NEVER Miss a Thing By Keeping Up With Our Socials Below</p>
+            </div>
+            <div class="app">
+                <img src="img/smartphone-mockup-in-human-hand-app-dashboard-profile-main-screen-vector-colorful-social-media-illustration-instagram-whatsapp-skype-2J7XCJ6 2.jpg" alt="">
+                <p>Download our mobile phone app today</p>
+            </div>
+            <div class="Thank-you">
+                <p>Thank You For Visiting Hotspot</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+
+        var scrollEventHandler = function()
+        {
+        window.scroll(0, window.pageYOffset)
+        }
+
+        window.addEventListener("scroll", scrollEventHandler, false);
+    </script>
+</body>
+</html>

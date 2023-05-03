@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="itemStylesheet.css">
+    <title>My Project</title>
+</head>
+<body>
+
+    <header id="navbar">
+        <h1 class="logo"><a href="index.html">HOTSPOT</a></h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="mens.html">Mens</a></li>
+                <li><a href="womens.html">Womens</a></li>
+                <li><a href="juniors.html">Junior</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="items">
+        <h2>Womens</h2>
+        <div class="images">
+            <img src="img/IMG_4267.JPG" alt="">
+            <img src="img/IMG_4268.jpg" alt="">
+            <img src="img/IMG_4269.JPG" alt="">
+            <img src="img/IMG_4270.JPG" alt="">
+            <img src="img/IMG_4271.JPG" alt="">
+            <img src="img/IMG_4272.JPG" alt="">
+        </div>
+    </section>
+    <section id="footer">
+        <div class="flex-container-1">
+            <div class="info">
+                <p>Dont Forget. We Provide Next Day Delivery. Straight To Your Front Door!</p>
+                <img src="#" alt="">
+            </div>
+            <div class="customer-care">
+                <p class="footer-title">Customer Care</p>
+                <ul>
+                    <a href="#"><li>Shipping Policy ></li></a>
+                    <a href="#"><li>Returns Policy ></li></a>
+                    <a href="#"><li>Contact Us ></li></a>
+                    <a href="#"><li>About Us ></li></a>
+                </ul>
+            </div>
+            <div class="stores">
+                <p class="footer-title">Visit Our Stores</p>
+                <p>HighCross Mall</p>
+                <p>Leicester</p>
+                <p>Fosse Park Unit</p>
+                <p>9. Leicester</p>
+            </div>
+            <div class="comment">
+                <p>NEVER Miss a Thing By Keeping Up With Our Socials Below</p>
+            </div>
+            <div class="app">
+                <img src="img/smartphone-mockup-in-human-hand-app-dashboard-profile-main-screen-vector-colorful-social-media-illustration-instagram-whatsapp-skype-2J7XCJ6 2.jpg" alt="">
+                <p>Download our mobile phone app today</p>
+            </div>
+            <div class="Thank-you">
+                <p>Thank You For Visiting Hotspot</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+
+        var scrollEventHandler = function()
+        {
+        window.scroll(0, window.pageYOffset)
+        }
+
+        window.addEventListener("scroll", scrollEventHandler, false);
+    </script>
+</body>
+</html>
